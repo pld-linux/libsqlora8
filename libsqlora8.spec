@@ -60,6 +60,8 @@ install -d $RPM_BUILD_ROOT{%{_aclocaldir},%{_bindir},%{_libdir},%{_includedir}}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+mv $RPM_BUILD_ROOT%{_libdir}/libsqlora8/include/libsqlora8-config.h $RPM_BUILD_ROOT%{_includedir}/
+
 rm -f doc/html/Makefile*
 
 %clean
@@ -81,6 +83,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/lib*.so
 %{_libdir}/lib*.la
 %{_includedir}/sqlora.h
+%{_includedir}/%{name}-config.h
 %{_aclocaldir}/*.m4
 
 %files static
