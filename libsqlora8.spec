@@ -8,7 +8,8 @@ Vendor:		Kai Poitschke
 Group:		Libraries
 Source0:	http://www.poitschke.de/libsqlora8/%{name}-%{version}.tar.gz
 # Source0-md5:	683f97278a64f4187e0302388102c06f
-URL:		http://www.poitschke.de/libsqlora8
+URL:		http://www.poitschke.de/libsqlora8/
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -69,17 +70,18 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc ChangeLog NEWS NEWS-2.2
 %attr(755,root,root) %{_libdir}/lib*.so.*.*.*
 
 %files devel
-%doc NEWS ChangeLog NEWS-2.2 doc/html
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/%{name}-config
+%doc doc/html
+%attr(755,root,root) %{_bindir}/*
+#%attr(755,root,root) %{_bindir}/%{name}-config
 %attr(755,root,root) %{_libdir}/lib*.so
 %{_libdir}/lib*.la
 %{_includedir}/sqlora.h
 %{_aclocaldir}/*.m4
-%attr(755,root,root) %{_bindir}/*
 
 %files static
 %defattr(644,root,root,755)
