@@ -77,8 +77,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/%{name}-config
 %attr(755,root,root) %{_libdir}/lib*.so
 %{_libdir}/lib*.la
-%{_includedir}/%{name}.h
-%{_includedir}/%{name}
+%{_includedir}/sqlora.h
 %{_aclocaldir}/*.m4
 %attr(755,root,root) %{_bindir}/*
 
