@@ -24,7 +24,7 @@ Oracle przez interfejs OCI.
 Summary:	Header files for libsqlora8 library
 Summary(pl):	Pliki nag³ówkowe biblioteki libsqlora8
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for libsqlora8 library.
@@ -36,7 +36,7 @@ Pliki nag³ówkowe biblioteki libsqlora8.
 Summary:	Static libsqlora8 library
 Summary(pl):	Statyczna biblioteka libsqlora8
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libsqlora8 library.
@@ -60,7 +60,7 @@ install -d $RPM_BUILD_ROOT{%{_aclocaldir},%{_bindir},%{_libdir},%{_includedir}}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-mv $RPM_BUILD_ROOT%{_libdir}/%{name}/include/%{name}-config.h $RPM_BUILD_ROOT%{_includedir}/
+mv $RPM_BUILD_ROOT%{_libdir}/%{name}/include/%{name}-config.h $RPM_BUILD_ROOT%{_includedir}
 
 rm -f doc/html/Makefile*
 
