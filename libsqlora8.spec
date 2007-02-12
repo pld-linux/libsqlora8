@@ -1,5 +1,5 @@
 Summary:	Library to access Oracle databases
-Summary(pl):	Biblioteka dostêpu do baz danych Oracle
+Summary(pl.UTF-8):   Biblioteka dostÄ™pu do baz danych Oracle
 Name:		libsqlora8
 Version:	2.2.11
 Release:	1
@@ -16,32 +16,32 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 libsqlora8 is simple C-library to access Oracle databases via the OCI
 interface.
 
-%description -l pl
-libsqlora8 jest prost± bibliotek± C umo¿liwiaj±c± dostêp do baz danych
+%description -l pl.UTF-8
+libsqlora8 jest prostÄ… bibliotekÄ… C umoÅ¼liwiajÄ…cÄ… dostÄ™p do baz danych
 Oracle przez interfejs OCI.
 
 %package devel
 Summary:	Header files for libsqlora8 library
-Summary(pl):	Pliki nag³ówkowe biblioteki libsqlora8
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki libsqlora8
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for libsqlora8 library.
 
-%description devel -l pl
-Pliki nag³ówkowe biblioteki libsqlora8.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe biblioteki libsqlora8.
 
 %package static
 Summary:	Static libsqlora8 library
-Summary(pl):	Statyczna biblioteka libsqlora8
+Summary(pl.UTF-8):   Statyczna biblioteka libsqlora8
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libsqlora8 library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka libsqlora8.
 
 %prep
