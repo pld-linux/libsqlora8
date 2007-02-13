@@ -1,5 +1,5 @@
 Summary:	Library to access Oracle databases
-Summary(pl.UTF-8):   Biblioteka dostępu do baz danych Oracle
+Summary(pl.UTF-8):	Biblioteka dostępu do baz danych Oracle
 Name:		libsqlora8
 Version:	2.2.11
 Release:	1
@@ -22,7 +22,7 @@ Oracle przez interfejs OCI.
 
 %package devel
 Summary:	Header files for libsqlora8 library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libsqlora8
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libsqlora8
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -34,7 +34,7 @@ Pliki nagłówkowe biblioteki libsqlora8.
 
 %package static
 Summary:	Static libsqlora8 library
-Summary(pl.UTF-8):   Statyczna biblioteka libsqlora8
+Summary(pl.UTF-8):	Statyczna biblioteka libsqlora8
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
