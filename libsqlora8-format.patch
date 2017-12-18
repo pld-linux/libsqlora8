@@ -1,0 +1,11 @@
+--- libsqlora8-2.3.3/sqlora.c.orig	2005-06-10 16:15:11.000000000 +0200
++++ libsqlora8-2.3.3/sqlora.c	2017-12-18 20:32:07.138748977 +0100
+@@ -4126,7 +4126,7 @@
+   if (real_sth >= dbp->stmtv_size || FALSE == dbp->stmtv[ real_sth ].used) {
+     
+     sprintf(dbp->errmsg, "Invalid sth %u passed to %s\n", real_sth, func_name);
+-    TRACE(1, fprintf( _get_trace_fp(dbp), dbp->errmsg););
++    TRACE(1, fprintf( _get_trace_fp(dbp), "%s", dbp->errmsg););
+       /* make sure we release all locks */ 
+     UNLOCK_ALL; 
+     return( NULL );
